@@ -1,0 +1,204 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1370px)
+  .table-data
+    font-size: 12px
+
+@media only screen and (max-width: 1330px)
+  .table-data
+    font-size: 11px
+@media only screen and (max-width: 1200px)
+  .sidebar-left
+    width: 288px
+
+  .content
+    width: calc(100% - 288px)
+    padding: 0 0 0 15px
+
+  .greeting
+    display: block
+
+  header .container
+    padding: 0 15px
+
+  .content-wrapper
+    width: 100%
+    padding: 0
+
+  .sidebar-right
+    width: 100%
+    margin: 30px 0 0
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    flex-wrap: wrap
+
+  .sidebar-title-mobile
+    display: flex
+
+  .sidebar-box-info
+    width: 49%
+
+  .sidebar-box-time
+    width: 100%
+
+  .sidebar-box__head h3
+    font-family: $default-font
+    text-transform: none
+    font-size: 16px
+    letter-spacing: 0
+    font-weight: normal
+
+  .sidebar-box-contracts, .sidebar-box-course
+    display: none
+
+  .sidebar-box-col
+    width: 49%
+    display: block
+
+    .sidebar-box-contracts, .sidebar-box-course
+      display: block
+      width: 100%
+
+  .table-data
+    font-size: 14px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px)
+  .table-data .td
+    padding: 0
+
+  .greeting
+    font-size: 20px
+
+  .content-row .content-box, .list-document li
+    width: 100%
+
+@media only screen and (max-width: 768px)
+  .greeting
+    font-size: 16px
+
+  .sidebar-left
+    display: none
+    position: fixed
+    left: 0
+    top: 80px
+    height: calc(100% - 80px)
+    overflow-y: auto
+    z-index: 3
+    width: 100%
+    border-radius: 0
+    background: #fff
+    padding: 0 0 60px
+    .btn-exit
+      display: flex
+
+  .list-language
+    margin: 0 20px 0 0
+    li
+      a
+        width: 24px
+        height: 16px
+
+  .content
+    width: 100%
+    padding: 0
+
+  .btn-menu
+    display: flex
+
+  header
+    padding: 10px 0
+    .btn-exit
+      display: none
+    .btn
+      max-width: 101px
+
+  .logo
+    max-width: 90px
+
+  .sidebar-menu li a
+    justify-content: center
+
+  .wrapper
+    padding: 20px 0 70px
+
+@media only screen and (max-width: 650px)
+  .greeting
+    display: none
+
+@media only screen and (max-width: 576px)
+  .form-item__head
+    h3
+      min-width: auto
+      width: 100%
+      margin: 0 auto 8px
+      text-align: center
+
+  .content-box__body
+    padding: 16px 10px
+
+  .form-item
+    padding: 20px 23px 18px
+    margin: 0 auto 15px
+
+  .time
+    width: 100%
+    text-align: center
+
+  .sidebar-box-info__head
+    flex-wrap: wrap
+    text-align: center
+    align-items: center
+    justify-content: center
+
+  .sidebar-box-contracts, .sidebar-box-course
+    display: block
+
+  .sidebar-box-col
+    display: none
+
+  .sidebar-box-info
+    width: 100%
+
+  .table-data
+    font-size: 12px
+
+  body
+    background: #fff
+
+  .container
+    padding: 0 10px
+
+  .content-box-table
+    .content-box__body
+      padding: 6px 0 0
+    .table-data
+      .tr
+        min-height: 99px
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        box-shadow: inset 0px -1px 0px #163D8E
+        &:nth-child(even)
+          box-shadow: none
+        &:last-child
+          box-shadow: none
+      .td
+        margin: 7px auto
+
+  .content-my .content-box
+    margin: 0 auto 15px
+
+
+@media only screen and (max-width: 480px)
+  /**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px)
+  /**/
+
