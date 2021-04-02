@@ -3,6 +3,13 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1410px)
+  .content-my-score
+    .sidebar-right
+      width: 300px
+    .content-wrapper
+      width: calc(100% - 300px)
+
 @media only screen and (max-width: 1370px)
   .table-data
     font-size: 12px
@@ -10,6 +17,32 @@
 @media only screen and (max-width: 1330px)
   .table-data
     font-size: 11px
+
+  .content-my-score
+    .sidebar-right
+      width: 100%
+    .content-wrapper
+      width: 100%
+      padding: 0
+    .sidebar-box-info
+      width: 100%
+
+  .sidebar-box-info-strategy
+    .sidebar-box-info__body
+      display: flex
+      align-items: flex-start
+      flex-wrap: wrap
+
+  .circle-diagram
+    margin: 0
+    max-width: 279px
+    height: 279px
+
+  .circle-diagram-list
+    max-width: 325px
+    margin: 0 0 0 auto
+
+
 @media only screen and (max-width: 1200px)
   .sidebar-left
     width: 288px
@@ -76,6 +109,47 @@
 
   .content-row .content-box, .list-document li
     width: 100%
+
+  .content-my-info h2
+    font-size: 20px
+
+  .status-score__item
+    font-size: 14px
+
+  .circle-diagram-list
+    width: 100%
+    margin: 40px auto 0
+    max-width: none
+
+  .circle-diagram
+    max-width: 262px
+    height: 262px
+    margin: 0 auto
+
+@media only screen and (max-width: 900px)
+  .content-my-info__head
+    flex-direction: column
+    align-items: center
+
+  .logo-my
+    &:last-child
+      display: none
+
+  .status-score
+    flex-direction: column
+    align-items: center
+
+  .status-score__item
+    margin: 0 auto 5px
+
+  .name-score
+    margin: 13px auto 0
+
+  .list-info
+    li
+      width: 50%
+      &:first-child, &:nth-child(2)
+        width: 100%
 
 @media only screen and (max-width: 768px)
   .greeting

@@ -125,4 +125,19 @@
               stroke-linejoin="round"/>
     </symbol>
 
+    <symbol id="no-active" viewBox="0 0 16 17">
+        <path d="M8 14.9963C11.3137 14.9963 14 12.31 14 8.99628C14 5.68257 11.3137 2.99628 8 2.99628C4.68629 2.99628 2 5.68257 2 8.99628C2 12.31 4.68629 14.9963 8 14.9963Z"
+              fill="#F84B4B" fill-opacity="0.2" stroke="#F84B4B" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M6 11.2463L10.3333 7.07961" stroke="#F84B4B" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M6.08333 6.99628L10.25 11.3296" stroke="#F84B4B" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+
+    <symbol id="arrow-btn" viewBox="0 0 24 25">
+        <path d="M12 21.5C16.9706 21.5 21 17.4706 21 12.5C21 7.52944 16.9706 3.5 12 3.5C7.02944 3.5 3 7.52944 3 12.5C3 17.4706 7.02944 21.5 12 21.5Z"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M11 15.5L14 12.5L11 9.5" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round"/>
+    </symbol>
+
 </svg>

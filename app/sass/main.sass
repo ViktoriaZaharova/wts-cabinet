@@ -180,6 +180,16 @@ button
   width: 100%
   max-width: 240px
 
+.btn-icon
+  fill: none
+  stroke: #fff
+  margin: 0 0 0 10px
+  width: 24px
+  height: 24px
+  display: flex
+  align-items: center
+  justify-content: center
+
 .btn-accent
   background: linear-gradient(180deg, #F3D576 0%, #C29A1B 100%), linear-gradient(180deg, #F0DDA2 0%, #C6A987 100%)
   color: $accent
@@ -218,6 +228,9 @@ button
 
 .color-green
   color: #1EB23E
+
+.color-red
+  color: #F84B4B
 
 .font-600
   font-weight: 600
@@ -603,14 +616,12 @@ header
     width: 100%
 
   .tr
-    background: #fff
     width: 100%
     min-height: 48px
     display: flex
     align-items: stretch
 
-    &:nth-child(even)
-      background: #F4F5F5
+
 
   .td
     display: flex
@@ -623,6 +634,12 @@ header
 
     &:last-child
       width: 57%
+
+.tr
+  background: #fff
+  &:nth-child(even)
+    background: #F4F5F5
+
 
 .list-document
   width: 100%
@@ -662,6 +679,9 @@ header
 .bg-orange
   background: #E0BF54
 
+.bg-grey
+  background: #F4F5F5
+
 .content-box-score
   border: none
   box-shadow: 0px 1px 8px rgba(203, 203, 203, 0.24)
@@ -677,6 +697,161 @@ header
   width: 16px
   height: 16px
   fill: none
+
+.box-balance__wrapper
+  box-shadow: 0px 1px 8px rgba(203, 203, 203, 0.24)
+  border: 1px solid #163D8E
+    radius: 8px
+  background: #ffff
+  overflow: hidden
+  margin: 0 0 37px
+
+.content-box-balance
+  box-shadow: none
+  border: none
+    radius: 0
+  .btn
+    margin: 19px auto 0
+    justify-content: center
+
+.content-my-info
+  width: 100%
+  margin: 0 0 17px
+  box-shadow: 0px 1px 8px rgba(203, 203, 203, 0.24)
+  background: #fff
+  border: 1px solid #163D8E
+    radius: 8px
+  padding: 8px
+  h2
+    text-align: center
+    width: auto
+    font-size: 28px
+    font-weight: 600
+    color: $accent
+
+.logo-my
+  display: flex
+  align-items: center
+  justify-content: center
+  max-width: 87px
+  width: 100%
+
+.content-my-info__head
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  margin: 0 0 20px
+
+.status-score
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  justify-content: center
+  font-size: 14px
+
+.status-score__item
+  display: flex
+  align-items: center
+  margin: 0 20px 0 0
+  &:last-child
+    margin: 0
+  .icon
+    width: 16px
+    height: 16px
+    margin: 0 4px 0 0
+    display: flex
+    align-items: center
+    justify-content: center
+
+.list-info
+  text-align: center
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-around
+  li
+    margin: 0 0 16px
+    &:first-child, &:nth-child(2)
+      width: 50%
+  p
+    color: #F6B52E
+  span
+    font-size: 18px
+
+.content-my-score
+  .content-wrapper
+    width: calc(100% - 400px)
+  .sidebar-right
+    width: 400px
+
+.circle-diagram
+  max-width: 300px
+  width: 100%
+  height: 300px
+  border-radius: 50%
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  background: #fff
+  box-shadow: 0 8px 24px rgba(22, 61, 142, 0.24)
+  margin: 0 auto
+
+
+.bg-circle-green
+  background: #B6E359
+
+.bg-circle-orange
+  background: #F6A652
+
+.bg-circle-red
+  background: #E75353
+
+.bg-circle-yellow
+  background: #F2EF4F
+
+.bg-circle-blue
+  background: #31A3F9
+
+.bg-circle-violet
+  background: #A57BD7
+
+.bg-circle-light-blue
+  background: #54D2FA
+
+.circle-diagram-list
+  width: 100%
+  margin: 40px auto 0
+  li
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-around
+    text-align: left
+    margin: 0 0 25px
+    &:last-child
+      margin: 0
+    strong
+      margin: 0 0 0 auto
+      color: #F6B52E
+      font-weight: 600
+      font-size: 18px
+    p
+      max-width: 230px
+      width: 100%
+
+.circle-pik
+  margin: 0 11px 0 0
+  border-radius: 50%
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 17px
+  height: 17px
+  min-width: 17px
+
 
 @import "media"
 // Всегда в конце
