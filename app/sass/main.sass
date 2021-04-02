@@ -471,7 +471,11 @@ header
   &__body
     width: 100%
     padding: 22px 25px 24px
-
+    h3
+      text-align: center
+      margin: 0 auto 16px
+      font-size: 18px
+      font-weight: 600
     .box-text
       text-align: center
       margin: 0 auto
@@ -851,6 +855,173 @@ header
   width: 17px
   height: 17px
   min-width: 17px
+
+.sidebar-left-my
+  .sidebar-box__head h3
+    font-family: $default-font
+    letter-spacing: 0.005em
+    text-transform: none
+    font-weight: normal
+    font-size: 16px
+
+.content-history
+  .content-wrapper
+    padding: 0
+    width: 100%
+
+.table
+  line-height: 150%
+  width: 100%
+  letter-spacing: 0.005em
+  td
+    padding: 13px 16px
+    text-align: center
+    vertical-align: middle
+
+thead
+  width: 100%
+  color: #F6B52E
+  border-bottom: 1px solid #F0F0F0
+
+tbody
+  font-size: 14px
+  line-height: 140%
+
+tr
+  background: #fff
+  &:nth-child(even)
+    background: #F4F5F5
+
+//pagination
+.pagination
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  justify-content: center
+  margin: 38px auto 0
+  li
+    margin: 0 16px 0 0
+    &:last-child
+      margin: 0
+    a
+      width: 32px
+      height: 32px
+      display: flex
+      align-items: center
+      justify-content: center
+      border: 1.5px solid #A9A9A9
+        radius: 4px
+      text-align: center
+      color: #A9A9A9
+      letter-spacing: 0.005em
+    .active
+      background: $accent
+      color: #fff
+      border-color: $accent
+    .disable
+      background: #F0F0F0
+    .svg-icon
+      stroke: #A9A9A9
+      width: 6px
+      height: 11px
+      fill: none
+
+.form-account
+  width: 100%
+  display: flex
+  align-items: flex-end
+  justify-content: space-between
+  flex-wrap: wrap
+  label
+    max-width: 264px
+    width: 100%
+  input
+    &::placeholder
+      color: #A9A9A9
+
+.input-text
+  text-align: center
+  width: 100%
+  display: inline-block
+  margin: 0 auto 8px
+  color: #F6B52E
+
+.select2-container
+  width: 100%
+
+.select2-container .select2-selection--single
+  height: 40px
+  border: 1px solid #163D8E
+    radius: 8px
+  outline: none
+
+.select2-container .select2-selection--single .select2-selection__rendered
+  height: 100%
+  display: flex
+  align-items: center
+  color: #A9A9A9
+  font-size: 18px
+
+.select2-container--default .select2-selection--single .select2-selection__arrow
+  top: 50%
+  right: 17px
+  transform: translate(0,-50%)
+  width: 8px
+  height: 5px
+  background: url("../img/arrow-bottom.svg") no-repeat center
+    size: contain
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b
+  display: none
+
+.select2-search--dropdown
+  display: none
+
+.select2-dropdown
+  margin: 9px auto 0
+  border: 1px solid #163D8E
+    radius: 4px
+  overflow: hidden
+  padding: 8px
+
+.select2-container--open .select2-dropdown--below
+  border: 1px solid #163D8E
+    radius: 4px
+
+.select2-results__option
+  padding: 8px
+  font-size: 18px
+
+.select2-container--default .select2-results__option--selected
+  background: transparent
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable
+  background: transparent
+  color: $accent
+
+.select2-container--default.select2-container--open.select2-container--below .select2-selection--single, .select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple
+  border-radius: 8px
+  .select2-selection__rendered
+    color: #23365B
+  .select2-selection__arrow
+    transform: rotate(180deg) translate(0)
+
+.list-number
+  text-align: left
+  margin: 34px 0 0
+  font-size: 12px
+  counter-reset: item
+  line-height: 150%
+  li
+    display: flex
+    align-items: flex-start
+    &:before
+      content: counters(item, ".") ". "
+      display: inline
+      counter-increment: item
+      margin: 0 5px 0 0
+
 
 
 @import "media"

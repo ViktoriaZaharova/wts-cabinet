@@ -3,6 +3,23 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1550px)
+  .form-account label
+    max-width: 32%
+
+@media only screen and (max-width: 1460px)
+  .table
+    font-size: 14px
+    td
+      padding: 10px
+
+  .form-account
+    label
+      max-width: 264px
+      margin: 0 auto 30px
+    button
+      margin: 0 auto
+
 @media only screen and (max-width: 1410px)
   .content-my-score
     .sidebar-right
@@ -41,6 +58,10 @@
   .circle-diagram-list
     max-width: 325px
     margin: 0 0 0 auto
+
+  .table
+    td
+      padding: 5px
 
 
 @media only screen and (max-width: 1200px)
@@ -99,6 +120,56 @@
   .table-data
     font-size: 14px
 
+@media only screen and (max-width: 1100px)
+  .table
+    td
+      padding: 0
+      text-align: left
+
+  .content-box-history
+    border: none
+    padding: 0
+    box-shadow: none
+    background: transparent
+    .content-box__body
+      padding: 0
+
+  thead
+    display: none
+
+  tr
+    background: #fff
+    margin: 0 0 8px
+    display: block
+    column-count: 2
+    padding: 15px
+    box-shadow: 0 1px 8px rgba(203, 203, 203, 0.24)
+    border: 1px solid #163D8E
+      radius: 8px
+    &:nth-child(even)
+      background: #fff
+
+
+  td
+    text-align: left
+    display: flex
+    align-items: center
+    margin: 0 0 16px
+    p
+      display: inline-block
+      width: 50%
+    &:last-child
+      margin: 0
+    &:before
+      content: attr(data-table)
+      display: inline-block
+      width: 50%
+      color: #F6B52E
+      text-align: right
+      padding: 0 15px 0 0
+
+
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px)
   .table-data .td
@@ -126,6 +197,7 @@
     height: 262px
     margin: 0 auto
 
+
 @media only screen and (max-width: 900px)
   .content-my-info__head
     flex-direction: column
@@ -150,6 +222,9 @@
       width: 50%
       &:first-child, &:nth-child(2)
         width: 100%
+
+  tr
+    column-count: 1
 
 @media only screen and (max-width: 768px)
   .greeting
@@ -199,6 +274,25 @@
 
   .wrapper
     padding: 20px 0 70px
+
+  td
+    display: flex
+    align-items: center
+    margin: 0 0 11px
+    &:before
+      width: 50%
+      text-align: center
+      padding: 0
+    p
+      width: 50%
+
+  .table
+    td
+      text-align: center
+
+  .form-account
+    flex-direction: column
+    align-items: center
 
 @media only screen and (max-width: 650px)
   .greeting

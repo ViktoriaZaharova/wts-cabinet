@@ -23,3 +23,5 @@ $('.btn-menu').on('click', function (e) {
     $('html, body').toggleClass('no-scroll');
     $('.sidebar-left').fadeToggle();
 });
+
+$('.js-example-basic-single').select2();
