@@ -18,12 +18,10 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
   <link rel="stylesheet" href="css/libs.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="css/main.css">
 
 </head>
@@ -55,36 +53,40 @@
       <div class="sidebar-box">
         <div class="sidebar-box__head"><h3>Информация</h3></div>
         <ul class="sidebar-menu">
-          <li><a href="#"><span class="sidebar-menu__icon"><svg class="svg-icon fill-none"><use
+          <li><a href="index.html"><span class="sidebar-menu__icon"><svg class="svg-icon fill-none"><use
               xlink:href="img/sprite.svg#menu-icon1"></use></svg></span>
             <span class="sidebar-menu__text">Мои данные</span>
           </a></li>
-          <li><a href="#" class="active"><span class="sidebar-menu__icon"><svg class="svg-icon fill-none"><use
-              xlink:href="img/sprite.svg#menu-icon2"></use></svg></span>
-            <span class="sidebar-menu__text">Верификация</span>
-          </a></li>
-          <li><a href="#"><span class="sidebar-menu__icon"><svg class="svg-icon fill-none"><use
+          <li><a href="my-document.html"><span class="sidebar-menu__icon"><svg class="svg-icon fill-none"><use
               xlink:href="img/sprite.svg#menu-icon3"></use></svg></span>
             <span class="sidebar-menu__text">Документы</span>
+          </a></li>
+          <li><a href="profitability-history.html"><span class="sidebar-menu__icon"><svg class="svg-icon fill-none"><use
+              xlink:href="img/sprite.svg#menu-icon12"></use></svg></span>
+            <span class="sidebar-menu__text">История доходности</span>
+          </a></li>
+          <li><a href="verification.html"><span class="sidebar-menu__icon"><svg class="svg-icon fill-none"><use
+              xlink:href="img/sprite.svg#menu-icon2"></use></svg></span>
+            <span class="sidebar-menu__text">Верификация</span>
           </a></li>
         </ul>
       </div>
       <div class="sidebar-box">
         <div class="sidebar-box__head"><h3>Финансы</h3></div>
         <ul class="sidebar-menu">
-          <li><a href="#"><span class="sidebar-menu__icon"><svg class="svg-icon"><use
+          <li><a href="my-score.html"><span class="sidebar-menu__icon"><svg class="svg-icon"><use
               xlink:href="img/sprite.svg#menu-icon4"></use></svg></span>
             <span class="sidebar-menu__text">Мой счет</span>
           </a></li>
-          <li><a href="#"><span class="sidebar-menu__icon"><svg class="svg-icon"><use
+          <li><a href="history.html"><span class="sidebar-menu__icon"><svg class="svg-icon"><use
               xlink:href="img/sprite.svg#menu-icon5"></use></svg></span>
             <span class="sidebar-menu__text">История транзакций</span>
           </a></li>
-          <li><a href="#" class="disable"><span class="sidebar-menu__icon"><svg class="svg-icon"><use
+          <li><a href="withdrawal-requests.html"><span class="sidebar-menu__icon"><svg class="svg-icon"><use
               xlink:href="img/sprite.svg#menu-icon6"></use></svg></span>
             <span class="sidebar-menu__text">Заявки на вывод</span>
           </a></li>
-          <li><a href="#" class="disable"><span class="sidebar-menu__icon"><svg class="svg-icon"><use
+          <li><a href="applications-for-replenishment.html"><span class="sidebar-menu__icon"><svg class="svg-icon"><use
               xlink:href="img/sprite.svg#menu-icon7"></use></svg></span>
             <span class="sidebar-menu__text">Заявки на пополнение</span>
           </a></li>
@@ -94,15 +96,36 @@
       <div class="sidebar-box">
         <div class="sidebar-box__head"><h3>Операции</h3></div>
         <ul class="sidebar-menu">
-          <li><a href="#"><span class="sidebar-menu__icon"><svg class="svg-icon"><use
+          <li><a href="up-account.html"><span class="sidebar-menu__icon"><svg class="svg-icon"><use
               xlink:href="img/sprite.svg#menu-icon8"></use></svg></span>
-            <span class="sidebar-menu__text">Пополнить счет</span>
+            <span class="sidebar-menu__text">Пополнить активы</span>
           </a></li>
-          <li><a href="#" class="disable"><span class="sidebar-menu__icon fill-none"><svg class="svg-icon"><use
+
+          <li><a href="rl-transfer.html"><span class="sidebar-menu__icon"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#menu-icon13"></use></svg></span>
+            <span class="sidebar-menu__text">RL Перевод</span>
+          </a></li>
+          <li><a href="rla-transfer.html"><span class="sidebar-menu__icon"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#menu-icon13"></use></svg></span>
+            <span class="sidebar-menu__text">RLR/RLA Перевод</span>
+          </a></li>
+          <li><a href="rl-score.html"><span class="sidebar-menu__icon"><svg class="svg-icon fill-none"><use
+              xlink:href="img/sprite.svg#menu-icon14"></use></svg></span>
+            <span class="sidebar-menu__text">RL Магазин</span>
+          </a></li>
+          <li><a href="get-loan.html"><span class="sidebar-menu__icon"><svg class="svg-icon fill-none"><use
+              xlink:href="img/sprite.svg#menu-icon15"></use></svg></span>
+            <span class="sidebar-menu__text">Получить займ</span>
+          </a></li>
+          <li><a href="repay-loan.html"><span class="sidebar-menu__icon"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#menu-icon16"></use></svg></span>
+            <span class="sidebar-menu__text">Закрыть займ</span>
+          </a></li>
+          <li><a href="contract.html"><span class="sidebar-menu__icon fill-none"><svg class="svg-icon"><use
               xlink:href="img/sprite.svg#menu-icon9"></use></svg></span>
             <span class="sidebar-menu__text">Увеличить контракт</span>
           </a></li>
-          <li><a href="#" class="disable"><span class="sidebar-menu__icon"><svg class="svg-icon"><use
+          <li><a href="output.html"><span class="sidebar-menu__icon"><svg class="svg-icon"><use
               xlink:href="img/sprite.svg#menu-icon10"></use></svg></span>
             <span class="sidebar-menu__text">Вывод средств</span>
           </a></li>
@@ -112,7 +135,7 @@
       <div class="sidebar-box">
         <div class="sidebar-box__head"><h3>Настройки</h3></div>
         <ul class="sidebar-menu">
-          <li><a href="#"><span class="sidebar-menu__icon"><svg class="svg-icon fill-none"><use
+          <li><a href="password.html"><span class="sidebar-menu__icon"><svg class="svg-icon fill-none"><use
               xlink:href="img/sprite.svg#menu-icon11"></use></svg></span>
             <span class="sidebar-menu__text">Смена пароля</span>
           </a></li>
@@ -128,8 +151,54 @@
           <div class="content-box__head"><h3>Верификация</h3></div>
           <div class="content-box__body">
             <div class="box-text">
-              <p>Ваши документы на рассмотрении</p>
+              <p>Просим загрузить файлы следующих форматов: jpg, png</p>
+              <p>Размер файла не может быть более 2 Мб</p>
             </div>
+
+            <form method="post" class="form-verification">
+
+              <div class="form-item">
+                <div class="form-item__head">
+                  <h3 class="color-yellow">Удостоверение личности</h3>
+                  <label class="label-file">
+                    <input type="file" class="inp-file">
+                    <span class="label-file__icon"><svg class="svg-icon fill-none"><use
+                        xlink:href="img/sprite.svg#add-file"></use></svg></span><span
+                      class="label-file__text">Загрузить </span>
+                  </label>
+                </div>
+
+                <div class="form-item__body">
+                  <div class="box-text">
+                    <p>В качестве документа, подтверждающего личность, Вы можете загрузить Ваш гражданский паспорт,
+                      удостоверение личности, заграничный паспорт или водительское удостоверение</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-item">
+                <div class="form-item__head">
+                  <h3 class="color-yellow">Адрес регистрации</h3>
+                  <label class="label-file">
+                    <input type="file" class="inp-file">
+                    <span class="label-file__icon"><svg class="svg-icon fill-none"><use
+                        xlink:href="img/sprite.svg#add-file"></use></svg></span><span
+                      class="label-file__text">Загрузить </span>
+                  </label>
+                </div>
+
+                <div class="form-item__body">
+                 <div class="box-text">
+                   <p>В качестве документа, подтверждающего место Вашего проживания, Вы можете загрузить любой документ,
+                     в котором прописаны Ваше ФИО и адрес Вашего проживания. Это могут быть: счет за коммунальные услуги,
+                     справка с банка, выписка из государственных реестров, договор аренды, прописка в гражданском паспорте,
+                     счет за услуги связи (мобильная связь или интернет) и т.д.</p>
+                 </div>
+                </div>
+              </div>
+
+              <a href="verification2.html" class="btn btn-blue" type="button">Отправить на верификацию</a>
+            </form>
           </div>
         </div>
       </div>
@@ -224,6 +293,7 @@
 </div>
 
 <script src="js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 <script src="js/common.js"></script>
 
 </body>

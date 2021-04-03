@@ -17,6 +17,16 @@ if ($(".sidebar-box-contracts, .sidebar-box-course").length){
     $('.sidebar-box-contracts, .sidebar-box-course').clone().appendTo('.sidebar-box-col');
 }
 
+// активная ссылка меню
+$('.sidebar-menu li a').each(function () {
+    let location = window.location.href;
+    let link = this.href;
+    if (location === link) {
+        $(this).addClass('active');
+    }
+});
+// end
+
 $('.btn-menu').on('click', function (e) {
     e.preventDefault();
     $(this).toggleClass('click');
@@ -46,10 +56,8 @@ const randomiseArray = (itemCount) => {
     let array = [];
     for (let i = 0; i < itemCount; i++) {
         let item = getRandomNum(100);
-        console.log(item);
         array.push(item);
     }
-    console.log(array);
     return array;
 };
 

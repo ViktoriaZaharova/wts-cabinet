@@ -243,7 +243,7 @@ button
 //header
 header
   color: #fff
-  background: $accent
+  background: #022A6A
   padding: 15px 0
 
   .container
@@ -291,9 +291,11 @@ header
     display: flex
     align-items: center
     justify-content: space-between
+    flex-wrap: wrap
     background: $accent
     min-height: 48px
-
+    p
+      margin: 0 auto
     h3
       text-transform: uppercase
       text-align: center
@@ -307,7 +309,9 @@ header
     .box-text
       p
         margin: 0 0 10px
-
+        transition: .3s ease
+        &:hover
+          color: $orange
         &:last-child
           margin: 0
 
@@ -334,6 +338,7 @@ header
   letter-spacing: 0.005em
   font-size: 28px
   font-weight: 600
+  margin: 0 auto
 
 .list-course
   li
@@ -342,7 +347,9 @@ header
     align-items: center
     flex-wrap: wrap
     margin: 0 0 20px
-
+    transition: .3s ease
+    &:hover
+      color: $orange
     &:last-child
       margin: 0
 
@@ -356,7 +363,7 @@ header
   border-radius: 8px
   overflow: hidden
   background: #fff
-
+  border: 1px solid $accent
   .btn-exit
     display: none
     margin: 18px auto 0
@@ -377,11 +384,11 @@ header
       text-align: center
       width: 100%
       padding: 4px 12px
-      letter-spacing: 0.15em
-      text-transform: uppercase
-      font-size: 10px
-      font-weight: 800
-      font-family: $title
+      font-family: $default-font
+      letter-spacing: 0.005em
+      text-transform: none
+      font-weight: normal
+      font-size: 16px
 
 .sidebar-menu__icon
   width: 24px
@@ -394,6 +401,7 @@ header
 
   .svg-icon
     fill: $orange
+    transition: .3s ease
 
 .sidebar-menu__icon
   .svg-icon.fill-none
@@ -419,14 +427,20 @@ header
       font-feature-settings: 'tnum' on, 'lnum' on
 
       &:hover
-        color: $accent
-        background: rgba(#E0E0E0, .25)
-        border-radius: 0px 16px 16px 0px
-
+        color: $orange
+        background: transparent
+        .sidebar-menu__icon
+          .svg-icon
+            fill: $accent
+        .sidebar-menu__icon
+          .svg-icon.fill-none
+            stroke-width: 2px
+            stroke: $accent
+            fill: none
     .active
       background: $orange
       color: #fff
-
+      pointer-events: none
       .sidebar-menu__icon
         .svg-icon
           fill: #fff
@@ -490,11 +504,15 @@ header
       font-feature-settings: 'tnum' on, 'lnum' on
       line-height: 150%
 
+.content-box-result
+  border: none
+
+
 //.form-verification
 .form-verification
   margin: 10px auto 0
 
-  button
+  .btn
     margin: 12px auto 0
     max-width: 310px
 
@@ -575,8 +593,6 @@ header
   margin: 0 auto
   font-size: 24px
   text-align: center
-  display: none
-
   strong
     font-weight: bold
 
@@ -593,10 +609,6 @@ header
 
   span
     display: none
-
-.sidebar-left-grey
-  .sidebar-box__head
-    color: #818181
 
 .content-box-data
   border: none
@@ -667,11 +679,16 @@ header
     &:last-child
       margin: 0
 
+
 .links-document
   display: flex
   align-items: flex-start
   color: #23365B
   line-height: 150%
+  &:hover
+    color: $orange
+    .links-document__icon
+      stroke: $orange
 
 .links-document__icon
   width: 24px
@@ -679,6 +696,7 @@ header
   min-width: 24px
   stroke: $accent
   margin: 0 8px 0 0
+  transition: .3s ease
 
 .content-my
   .content-box
@@ -878,14 +896,6 @@ header
   width: 17px
   height: 17px
   min-width: 17px
-
-.sidebar-left-my
-  .sidebar-box__head h3
-    font-family: $default-font
-    letter-spacing: 0.005em
-    text-transform: none
-    font-weight: normal
-    font-size: 16px
 
 .content-history
   .content-wrapper
@@ -1237,10 +1247,15 @@ tr
     margin: 0 0 10px auto
   button
     margin: 0 auto
-  .links-next
-    display: none
   .checkbox
     max-width: none
+  .form-footer
+    position: relative
+    //.links-next
+    //  position: absolute
+    //  left: 0
+    //  top: 50%
+    //  transform: translate(0,-50%)
 
 .content-box-wbs
   .logo-my
@@ -1383,6 +1398,10 @@ tr
     color: #F6B52E
     margin: 0 -1px 0 0
     cursor: pointer
+    transition: .3s ease
+    &:hover
+      background: $accent
+      color: #fff
     &:last-child
       margin: 0
       border-radius: 0 4px 4px 0
