@@ -1146,6 +1146,17 @@ tr
 
 .checkbox-inp:checked + .checkbox-custom
   background: $accent
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    width: 12px
+    height: 9px
+    background: url("../img/checkbox.svg") no-repeat center
+      size: contain
+
 
 .form-score
   width: 100%
@@ -1276,11 +1287,6 @@ tr
   color: #23365B
   font-size: 12px
 
-.output-wrapper
-  .box-text
-    text-align: center
-    margin: 0 auto 18px
-
 .form-output, .output-wrapper
   width: 100%
   display: flex
@@ -1293,6 +1299,15 @@ tr
     max-width: 264px
   label
     max-width: 320px
+
+
+.output-wrapper
+  align-items: center
+  .box-text
+    text-align: center
+    margin: 0 auto 18px
+  .remainder-box
+    margin: 0 auto 14px
 
 .output-box
   margin: 0 0 20px
@@ -1308,6 +1323,38 @@ tr
 .remainder-box
   p
     color: #F6B52E
+
+.necessarily
+  width: 100%
+  margin: 14px 0 0
+  color: #A9A9A9
+  font-size: 12px
+
+.content-box-contract
+  .output-wrapper
+    max-width: 830px
+  .form-output
+    max-width: 731px
+    .checkbox
+      max-width: none
+      width: 100%
+      margin: 28px 0
+    .form-group
+      max-width: 633px
+      width: 100%
+      display: flex
+      justify-content: space-between
+      align-items: flex-end
+      flex-wrap: wrap
+      label
+        max-width: 270px
+        width: 100%
+  .output-box
+    width: 38%
+  .output-box-max
+    width: 60%
+
+
 
 @import "media"
 // Всегда в конце

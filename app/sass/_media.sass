@@ -73,6 +73,9 @@
   .output-box, .form-output label, .form-output .btn
     max-width: 48%
 
+  .content-box-contract .output-box
+    max-width: none
+
 @media only screen and (max-width: 1370px)
   .table-data
     font-size: 12px
@@ -346,6 +349,17 @@
   tr
     column-count: 1
 
+  .content-box-contract .form-output .form-group
+    flex-direction: column
+    align-items: center
+
+  .content-box-contract .form-output .form-group label
+    max-width: none
+    margin: 0 auto 24px
+
+  .content-box-contract .output-box-max, .content-box-contract .output-box
+    width: 100%
+
 @media only screen and (max-width: 768px)
   .greeting
     font-size: 16px
@@ -567,11 +581,5 @@
     .btn
       margin: 0 auto
 
-@media only screen and (max-width: 480px)
-  /**/
-
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width: 320px)
-  /**/
-
+  .content-box-contract .form-output .form-group label
+    margin: 0
