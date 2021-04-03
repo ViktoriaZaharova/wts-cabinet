@@ -223,6 +223,11 @@ button
     background: linear-gradient(180deg, #1E5FE7 0%, #163D8E 100%)
     box-shadow: 0px 4px 4px rgba(13, 55, 124, 0.32)
 
+.btn:disabled
+  background: #F0F0F0
+  color: #ADADAD
+  pointer-events: none
+
 .color-yellow
   color: #F6B52E
 
@@ -471,11 +476,13 @@ header
   &__body
     width: 100%
     padding: 22px 25px 24px
+
     h3
       text-align: center
       margin: 0 auto 16px
       font-size: 18px
       font-weight: 600
+
     .box-text
       text-align: center
       margin: 0 auto
@@ -626,7 +633,6 @@ header
     align-items: stretch
 
 
-
   .td
     display: flex
     align-items: center
@@ -641,6 +647,7 @@ header
 
 .tr
   background: #fff
+
   &:nth-child(even)
     background: #F4F5F5
 
@@ -714,6 +721,7 @@ header
   box-shadow: none
   border: none
     radius: 0
+
   .btn
     margin: 19px auto 0
     justify-content: center
@@ -726,6 +734,7 @@ header
   border: 1px solid #163D8E
     radius: 8px
   padding: 8px
+
   h2
     text-align: center
     width: auto
@@ -759,8 +768,10 @@ header
   display: flex
   align-items: center
   margin: 0 20px 0 0
+
   &:last-child
     margin: 0
+
   .icon
     width: 16px
     height: 16px
@@ -775,18 +786,26 @@ header
   align-items: flex-start
   flex-wrap: wrap
   justify-content: space-around
+
   li
     margin: 0 0 16px
+
     &:first-child, &:nth-child(2)
       width: 50%
+
   p
     color: #F6B52E
+
   span
     font-size: 18px
+  .color-green
+    color: #1EB23E
+
 
 .content-my-score
   .content-wrapper
     width: calc(100% - 400px)
+
   .sidebar-right
     width: 400px
 
@@ -828,6 +847,7 @@ header
 .circle-diagram-list
   width: 100%
   margin: 40px auto 0
+
   li
     width: 100%
     display: flex
@@ -835,13 +855,16 @@ header
     justify-content: space-around
     text-align: left
     margin: 0 0 25px
+
     &:last-child
       margin: 0
+
     strong
       margin: 0 0 0 auto
       color: #F6B52E
       font-weight: 600
       font-size: 18px
+
     p
       max-width: 230px
       width: 100%
@@ -873,6 +896,7 @@ header
   line-height: 150%
   width: 100%
   letter-spacing: 0.005em
+
   td
     padding: 13px 16px
     text-align: center
@@ -889,6 +913,7 @@ tbody
 
 tr
   background: #fff
+
   &:nth-child(even)
     background: #F4F5F5
 
@@ -900,10 +925,13 @@ tr
   flex-wrap: wrap
   justify-content: center
   margin: 38px auto 0
+
   li
     margin: 0 16px 0 0
+
     &:last-child
       margin: 0
+
     a
       width: 32px
       height: 32px
@@ -915,12 +943,15 @@ tr
       text-align: center
       color: #A9A9A9
       letter-spacing: 0.005em
+
     .active
       background: $accent
       color: #fff
       border-color: $accent
+
     .disable
       background: #F0F0F0
+
     .svg-icon
       stroke: #A9A9A9
       width: 6px
@@ -933,9 +964,11 @@ tr
   align-items: flex-end
   justify-content: space-between
   flex-wrap: wrap
+
   label
     max-width: 264px
     width: 100%
+
   input
     &::placeholder
       color: #A9A9A9
@@ -966,7 +999,7 @@ tr
 .select2-container--default .select2-selection--single .select2-selection__arrow
   top: 50%
   right: 17px
-  transform: translate(0,-50%)
+  transform: translate(0, -50%)
   width: 8px
   height: 5px
   background: url("../img/arrow-bottom.svg") no-repeat center
@@ -1002,8 +1035,10 @@ tr
 
 .select2-container--default.select2-container--open.select2-container--below .select2-selection--single, .select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple
   border-radius: 8px
+
   .select2-selection__rendered
     color: #23365B
+
   .select2-selection__arrow
     transform: rotate(180deg) translate(0)
 
@@ -1013,16 +1048,266 @@ tr
   font-size: 12px
   counter-reset: item
   line-height: 150%
+
   li
     display: flex
     align-items: flex-start
+
     &:before
       content: counters(item, ".") ". "
       display: inline
       counter-increment: item
       margin: 0 5px 0 0
 
+//transfer
+.transfer-form
+  width: 100%
 
+  .form-group
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+
+  .name-score
+    max-width: 386px
+    width: 100%
+
+    .form-group
+      display: flex
+      align-items: center
+      flex-wrap: wrap
+      justify-content: center
+      span
+        font-size: 16px
+        font-weight: 600
+        color: #23365B
+
+      input
+        margin: 0 10px
+        max-width: 184px
+
+  .form-group-bottom
+    align-items: flex-end
+
+    label
+      width: calc(100% - 264px)
+      padding: 0 32px 0 0
+
+  button
+    margin: 0 0 3px auto
+    max-width: 264px
+  input
+    &::placeholder
+      color: #A9A9A9
+  textarea
+    height: 96px
+    padding: 7px 16px
+    border: 1px solid #163D8E
+      radius: 8px
+
+    &::placeholder
+      color: #A9A9A9
+
+  .checkbox
+    margin: 29px 0
+    max-width: none
+
+
+.form-group-top
+  max-width: 559px
+  width: 100%
+  margin: 0 auto
+  justify-content: space-between
+
+  label
+    max-width: 47%
+
+.checkbox
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: flex-start
+  color: #23365B
+  font-size: 14px
+  cursor: pointer
+
+.checkbox-inp
+  display: none
+
+.checkbox-custom
+  position: relative
+  width: 18px
+  height: 18px
+  min-width: 18px
+  background: #fff
+  border: 1px solid #163D8E
+    radius: 4px
+  margin: 0 8px 0 0
+
+.checkbox-inp:checked + .checkbox-custom
+  background: $accent
+
+.form-score
+  width: 100%
+  label
+    width: 100%
+    margin: 0 0 23px
+    display: flex
+    align-items: center
+    justify-content: space-around
+  .input-text
+    width: 50%
+    color: #23365B
+    margin: 0
+  input
+    max-width: 160px
+    text-align: center
+    &::placeholder
+      color: #A9A9A9
+
+.form-footer
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 48px 0 0
+
+.links-next
+  display: flex
+  align-items: center
+  color: $accent
+
+.links-next-icon
+  width: 24px
+  height: 24px
+  fill: none
+  stroke: $accent
+  margin: 0 8px 0 0
+  display: flex
+  align-items: center
+  justify-content: center
+
+.total-value
+  display: flex
+  align-items: center
+  margin: 0 0 0 auto
+  white-space: nowrap
+  .btn
+    width: 264px
+  p
+    color: #F6B52E
+
+.sum-total-value
+  margin: 0 30px 0 48px
+  font-size: 18px
+  font-weight: 600
+  color: $accent
+
+.btn-wrap
+  width: 100%
+  margin: 0 0 25px
+
+.form-wbs
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  .form-group
+    max-width: 640px
+    width: 100%
+    display: flex
+    align-items: flex-end
+    flex-wrap: wrap
+    margin: 0 auto 38px
+  label
+    max-width: 264px
+  .sum-total-value
+    margin: 0 0 0 48px
+  .total-value
+    margin: 0 0 10px auto
+  button
+    margin: 0 auto
+  .links-next
+    display: none
+  .checkbox
+    max-width: none
+
+.content-box-wbs
+  .logo-my
+    max-width: 144px
+  .form-wbs .checkbox
+    margin: 43px 0 33px
+  .form-wbs .form-group
+    max-width: none
+    input
+      width: 100%
+      max-width: none
+  .name-score
+    max-width: 412px
+    width: 100%
+
+.form-password
+  width: 100%
+  max-width: 762px
+  margin: 0 auto
+  button
+    margin: 0 auto
+  label
+    width: 100%
+    display: flex
+    align-items: center
+    flex-wrap: nowrap
+    margin: 0 0 24px
+  .input-text
+    margin: 0
+    width: calc(100% - 360px)
+    text-align: left
+  input, .select-wrap
+    max-width: 360px
+    width: 100%
+    &::placeholder
+      color: #A9A9A9
+  .box-text
+    margin: 0 auto 11px
+    text-align: center
+    font-size: 14px
+
+.description-form
+  display: block
+  color: #23365B
+  font-size: 12px
+
+.output-wrapper
+  .box-text
+    text-align: center
+    margin: 0 auto 18px
+
+.form-output, .output-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-end
+  justify-content: space-between
+  flex-wrap: wrap
+  max-width: 657px
+  margin: 0 auto
+  .btn
+    max-width: 264px
+  label
+    max-width: 320px
+
+.output-box
+  margin: 0 0 20px
+  border: 1px solid #163D8E
+    radius: 8px
+  background: #fff
+  text-align: center
+  padding: 4px 30px
+  width: fit-content
+  p
+    color: #F6B52E
+
+.remainder-box
+  p
+    color: #F6B52E
 
 @import "media"
 // Всегда в конце
