@@ -7,11 +7,21 @@
   .form-account label
     max-width: 32%
 
+  .content-box-wbs .name-score
+    max-width: 300px
+
+  .transfer-form-rl .logo-my
+    max-width: 120px
+
+@media only screen and (max-width: 1480px)
+  .content-my-info__head
+    padding: 0
+
 @media only screen and (max-width: 1460px)
   .table
     font-size: 14px
     td
-      padding: 10px
+      padding: 7px
 
   .form-account
     label
@@ -76,12 +86,16 @@
   .content-box-contract .output-box
     max-width: none
 
+  .transfer-form-rl .logo-my
+    max-width: 70px
+
 @media only screen and (max-width: 1370px)
   .table-data
     font-size: 12px
 
   .content-box-wbs .name-score
     max-width: 270px
+
 
 @media only screen and (max-width: 1330px)
   .table-data
@@ -166,6 +180,18 @@
     .content-my-info__head
       margin: 0
 
+  .form-verification .form-item__head .label-file
+    position: relative
+    right: 0
+    top: 0
+    transform: none
+
+  .btn-group
+    justify-content: space-around
+    .btn
+      margin-right: 0
+
+
 @media only screen and (max-width: 1200px)
   .sidebar-left
     width: 288px
@@ -240,6 +266,12 @@
   .form-password .input-text
     width: calc(100% - 330px)
 
+  .form-footer
+    .links-next
+      transform: none
+      top: 0
+      position: relative
+
 @media only screen and (max-width: 1100px)
   .table
     td
@@ -288,7 +320,19 @@
       text-align: right
       padding: 0 15px 0 0
 
+  .greeting
+    position: relative
+    left: 0
+    top: 0
+    transform: none
 
+  .table-form
+    td
+      display: block
+      &:before
+        display: none
+      p
+        width: 100%
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px)
@@ -518,7 +562,7 @@
   .form-footer
     flex-direction: column
     align-items: center
-    padding: 0 0 39px
+    padding: 0 0 15px
     .links-next
       order: 1
     .btn
@@ -589,3 +633,6 @@
 
   .tab-header li
     width: 120px
+
+  .chart
+    height: 350px

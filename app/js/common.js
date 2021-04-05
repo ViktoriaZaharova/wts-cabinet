@@ -48,66 +48,135 @@ $(".js-tab-trigger").on('click', function () {
 });
 
 // global chart settings
-Chart.defaults.plugins.legend.display = false;
+$(document).ready(function () {
+    Chart.defaults.plugins.legend.display = false;
 
-const getRandomNum = (max) => Math.floor(Math.random() * Math.floor(max));
+    const getRandomNum = (max) => Math.floor(Math.random() * Math.floor(max));
 
-const randomiseArray = (itemCount) => {
-    let array = [];
-    for (let i = 0; i < itemCount; i++) {
-        let item = getRandomNum(100);
-        array.push(item);
-    }
-    return array;
-};
-
-const data = () => ({
-    labels: ["январь", "февраль", "март", "апрель", "май", "июнь", "июль", "август", "сентябрь", "октябрь", "ноябрь", "декабрь"],
-    datasets: [
-        {
-            // label: "Dataset #1",
-            backgroundColor: "rgba(22, 61, 142,0.5)",
-            // backgroundColor: "rgba(255, 121, 89, 0.2)",
-            borderColor: "#163D8E",
-            borderWidth: 2,
-            hoverBackgroundColor: "rgba(255,99,132,0.4)",
-            hoverBorderColor: "rgba(255,99,132,1)",
-            data: [...randomiseArray(12)]
+    const randomiseArray = (itemCount) => {
+        let array = [];
+        for (let i = 0; i < itemCount; i++) {
+            let item = getRandomNum(100);
+            array.push(item);
         }
-    ]
-});
+        return array;
+    };
 
-var options = {
-    maintainAspectRatio: false,
-    scales: {
-        yAxes: [
+    const data = () => ({
+        labels: ["январь", "февраль", "март", "апрель", "май", "июнь", "июль", "август", "сентябрь", "октябрь", "ноябрь", "декабрь"],
+        datasets: [
             {
-                stacked: true,
-                gridLines: {
-                    display: true,
-                    color: "rgba(255,99,132,0.2)"
-                    // color: '#ff7959'
-                }
-            }
-        ],
-        xAxes: [
-            {
-                gridLines: {
-                    display: false
-                }
+                // label: "Dataset #1",
+                backgroundColor: "rgba(22, 61, 142,0.5)",
+                // backgroundColor: "rgba(255, 121, 89, 0.2)",
+                borderColor: "#163D8E",
+                borderWidth: 2,
+                hoverBackgroundColor: "rgba(255,99,132,0.4)",
+                hoverBorderColor: "rgba(255,99,132,1)",
+                data: [...randomiseArray(12)]
             }
         ]
-    }
-};
+    });
 
-let chart = new Chart("chart", {
-    type: "line",
-    data: data(),
-    options: options
+    var options = {
+        maintainAspectRatio: false,
+        scales: {
+            yAxes: [
+                {
+                    stacked: true,
+                    gridLines: {
+                        display: true,
+                        color: "rgba(255,99,132,0.2)"
+                        // color: '#ff7959'
+                    }
+                }
+            ],
+            xAxes: [
+                {
+                    gridLines: {
+                        display: false
+                    }
+                }
+            ]
+        }
+    };
+
+    let chart = new Chart("chart", {
+        type: "line",
+        data: data(),
+        options: options
+    });
+
+    const resetSelected = () => {
+        categories.forEach((category) => {
+            category.classList.remove("selected");
+        });
+    };
+
 });
 
-const resetSelected = () => {
-    categories.forEach((category) => {
-        category.classList.remove("selected");
+$(document).ready(function () {
+    Chart.defaults.plugins.legend.display = false;
+
+    const getRandomNum = (max) => Math.floor(Math.random() * Math.floor(max));
+
+    const randomiseArray = (itemCount) => {
+        let array = [];
+        for (let i = 0; i < itemCount; i++) {
+            let item = getRandomNum(100);
+            array.push(item);
+        }
+        return array;
+    };
+
+    const data = () => ({
+        labels: ["январь", "февраль", "март", "апрель", "май", "июнь", "июль", "август", "сентябрь", "октябрь", "ноябрь", "декабрь"],
+        datasets: [
+            {
+                // label: "Dataset #1",
+                backgroundColor: "rgba(22, 61, 142,0.5)",
+                // backgroundColor: "rgba(255, 121, 89, 0.2)",
+                borderColor: "#163D8E",
+                borderWidth: 2,
+                hoverBackgroundColor: "rgba(255,99,132,0.4)",
+                hoverBorderColor: "rgba(255,99,132,1)",
+                data: [...randomiseArray(12)]
+            }
+        ]
     });
-};
+
+    var options = {
+        maintainAspectRatio: false,
+        scales: {
+            yAxes: [
+                {
+                    stacked: true,
+                    gridLines: {
+                        display: true,
+                        color: "rgba(255,99,132,0.2)"
+                        // color: '#ff7959'
+                    }
+                }
+            ],
+            xAxes: [
+                {
+                    gridLines: {
+                        display: false
+                    }
+                }
+            ]
+        }
+    };
+
+    let chart = new Chart("chart2", {
+        type: "line",
+        data: data(),
+        options: options
+    });
+
+    const resetSelected = () => {
+        categories.forEach((category) => {
+            category.classList.remove("selected");
+        });
+    };
+});

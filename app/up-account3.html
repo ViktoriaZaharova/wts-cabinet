@@ -30,7 +30,7 @@
 
 <header>
   <div class="container">
-    <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+    <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
 
     <div class="greeting">
       <p>Добро пожаловать, <strong>Ivan Ivanov</strong></p>
@@ -148,40 +148,38 @@
     <div class="content">
       <div class="content-wrapper">
         <div class="content-box">
-          <div class="content-box__head"><h3>Пополнить активы</h3></div>
+          <div class="content-box__head"><h3>ОПЛАТИТЬ ПО СИСТЕМЕ PAYEER</h3></div>
           <div class="content-box__body">
             <form method="post" class="form-account">
-              <label>
-                <span class="input-text">Сумма</span>
-                <input type="text" placeholder="Введите сумму" name="sum">
-              </label>
-              <label>
-                <span class="input-text">Платежная система:</span>
-                <select name="select" class="select js-example-basic-single">
-                  <option value="выберите систему">выберите систему</option>
-                  <option value="Perfect Money">Perfect Money</option>
-                  <option value="Payeer">Payeer</option>
-                </select>
-              </label>
-              <button type="submit" class="btn btn-blue">Продолжить</button>
+              <table class="table table-form">
+                <tbody>
+                <tr>
+                  <td class="td-table"><p>Сумма</p></td>
+                  <td class="td-table"><p>1,00</p></td>
+                </tr>
+                <tr>
+                  <td class="td-table"><p>Payeer кошелек</p></td>
+                  <td class="td-table"><p>P1030187720</p></td>
+                </tr>
+                <tr>
+                  <td class="td-table"><p>Ваш Payeer кошелек</p></td>
+                  <td class="td-table">
+                    <label>
+                      <input type="text" placeholder="Введите номер кошелька" name="number">
+                    </label>
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+
+
+
+              <div class="btn-group">
+                <a href="up-account.html" class="btn btn-border">Отменить</a>
+                <button type="submit" class="btn btn-blue">Подтвердить оплату</button>
+              </div>
             </form>
 
-            <div class="box-text">
-              <ul class="list-number">
-                <li>Для пополнения Вашего учетного счета Royal с помощью системы Payeer выберите в поле
-                  "Платежная система" пункт "Payeer".
-                </li>
-                <li>Введите желаемую сумму пополнения в поле "Сумма", после чего нажмите кнопку "Продолжить".</li>
-                <li>В открывшемся окне отображается номер кошелька компании World Trend Strategies в системе Payeer.
-                  Далее Вам необходимо перейти на сайт системы Payeer, зайти в Ваш личный кабинет и осуществить перевод средств по указанным реквизитам.
-                </li>
-                <li>После успешного перевода средств вернитесь на страницу на сайте компании World Trend Strategies
-                  и в поле "Ваш Payeer кошелек" укажите номер Вашего кошелька, с которого Вы отправили средства
-                  (Например, P12345678). После чего нажмите кнопку "Подтвердить оплату".</li>
-                <li>Ваша заявка принята в обработку. Денежные средства будут зачислены
-                  на Ваш учетный счет Royal в течение 24 часов.</li>
-              </ul>
-            </div>
           </div>
         </div>
 
