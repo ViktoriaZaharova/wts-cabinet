@@ -63,7 +63,7 @@ body {
   position: relative;
   line-height: normal;
   font-family: "Montserrat", sans-serif;
-  font-weight: normal;
+  font-weight: 500;
   background: #F4F5F5;
   color: #23365B; }
 
@@ -339,7 +339,8 @@ header {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     background: #163D8E;
-    min-height: 48px; }
+    min-height: 48px;
+    font-weight: 500; }
     .sidebar-box-info__head p {
       margin: 0 auto; }
     .sidebar-box-info__head h3 {
@@ -441,7 +442,7 @@ header {
     font-family: "Montserrat", sans-serif;
     letter-spacing: 0.005em;
     text-transform: none;
-    font-weight: normal;
+    font-weight: 500;
     font-size: 16px; }
 
 .sidebar-menu__icon {
@@ -483,6 +484,7 @@ header {
       padding: 12px 20px;
       letter-spacing: 0.005em;
       font-size: 16px;
+      font-weight: 500;
       color: #000;
       -webkit-font-feature-settings: 'tnum' on, 'lnum' on;
               font-feature-settings: 'tnum' on, 'lnum' on; }
@@ -1046,8 +1048,7 @@ header {
 
 thead {
   width: 100%;
-  color: #F6B52E;
-  border-bottom: 1px solid #F0F0F0; }
+  color: #F6B52E; }
 
 tbody {
   font-size: 14px;
