@@ -66,14 +66,16 @@ $(document).ready(function () {
         labels: ["январь", "февраль", "март", "апрель", "май", "июнь", "июль", "август", "сентябрь", "октябрь", "ноябрь", "декабрь"],
         datasets: [
             {
-                // label: "Dataset #1",
-                backgroundColor: "rgba(22, 61, 142,0.5)",
-                // backgroundColor: "rgba(255, 121, 89, 0.2)",
                 borderColor: "#163D8E",
+                // backgroundColor: "rgba(255, 121, 89, 0.2)",
+
+                // label: "Dataset #1",
+                backgroundColor: "rgba(197, 220, 250, 0.5)",
                 borderWidth: 2,
                 hoverBackgroundColor: "rgba(255,99,132,0.4)",
                 hoverBorderColor: "rgba(255,99,132,1)",
-                data: [...randomiseArray(12)]
+                data: [...randomiseArray(12)],
+                fill: true
             }
         ]
     });
