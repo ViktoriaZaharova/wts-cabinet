@@ -1001,11 +1001,11 @@ header {
   .list-info li {
     margin: 0 0 16px; }
     .list-info li:first-child {
-      width: 40%; }
+      width: 50%; }
     .list-info li:nth-child(2) {
-      width: 60%; }
+      width: 50%; }
   .list-info p {
-    color: #F6B52E; }
+    color: #E0BF54; }
   .list-info span {
     font-size: 18px; }
   .list-info .color-green {
@@ -1113,6 +1113,8 @@ header {
     padding: 13px 16px;
     text-align: center;
     vertical-align: middle; }
+  .table .td-table:first-child {
+    min-width: 90px; }
 
 thead {
   width: 100%;
@@ -1193,6 +1195,8 @@ tr {
   .form-account label {
     max-width: 264px;
     width: 100%; }
+    .form-account label input {
+      max-width: 264px; }
   .form-account input::-webkit-input-placeholder {
     color: #A9A9A9; }
   .form-account input::-moz-placeholder {
@@ -1641,7 +1645,10 @@ tr {
     text-align: center;
     margin: 0 auto 18px; }
   .output-wrapper .remainder-box {
-    margin: 0 auto 14px; }
+    margin: 0 auto 14px;
+    text-align: center; }
+  .output-wrapper .btn {
+    margin: 0 0 10px; }
 
 .output-box {
   margin: 0 0 20px;
@@ -1781,7 +1788,14 @@ tr {
   .content-box-wbs .name-score {
     max-width: 300px; }
   .transfer-form-rl .logo-my {
-    max-width: 120px; } }
+    max-width: 120px; }
+  .form-footer .links-next {
+    position: relative;
+    -webkit-transform: none;
+            transform: none;
+    top: 0; }
+  .sum-total-value {
+    margin: 0 10px; } }
 
 @media only screen and (max-width: 1480px) {
   .content-my-info__head {
@@ -1793,7 +1807,6 @@ tr {
     .table td {
       padding: 7px; }
   .form-account label {
-    max-width: 264px;
     margin: 0 auto 30px; }
   .form-account button {
     margin: 0 auto 30px; } }
