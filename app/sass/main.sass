@@ -119,8 +119,8 @@ button
   padding: 24px 0
 
 .container
-  padding: 0 15px
-  max-width: 1710px
+  padding: 0 20px
+  max-width: 1720px
   width: 100%
   margin: 0 auto
   position: relative
@@ -138,7 +138,7 @@ button
 
 .logo
   width: 100%
-  max-width: 116px
+  max-width: 75px
   display: flex
   align-items: center
   margin: 0 auto 0 0
@@ -265,7 +265,7 @@ button
       margin: 20px 0 0
 
 .color-yellow
-  color: #F6B52E
+  color: $hover
 
 .color-green
   color: #1EB23E
@@ -280,7 +280,7 @@ button
 header
   color: #fff
   background: #022A6A
-  padding: 15px 0
+  padding: 19px 0
 
   .container
     align-items: center
@@ -346,7 +346,7 @@ header
         margin: 0 0 10px
         transition: .3s ease
         &:hover
-          color: $orange
+          color: $hover
         &:last-child
           margin: 0
 
@@ -386,7 +386,7 @@ header
     margin: 0 0 20px
     transition: .3s ease
     &:hover
-      color: $orange
+      color: $hover
     &:last-child
       margin: 0
 
@@ -524,6 +524,7 @@ header
       letter-spacing: 0.005em
       text-transform: uppercase
       font-size: 16px
+      font-weight: 500
 
   &__body
     width: 100%
@@ -542,6 +543,8 @@ header
       font-feature-settings: 'tnum' on, 'lnum' on
       line-height: 150%
       font-size: 14px
+      strong
+        font-weight: bold
 
 .content-box-result
   border: none
@@ -559,15 +562,6 @@ header
     font-size: 12px
     line-height: 150%
     letter-spacing: 0.005em
-  .form-item__head
-    position: relative
-    .label-file
-      position: absolute
-      right: 0
-      top: 50%
-      transform: translate(0,-50%)
-
-
 
 .form-item
   padding: 10px 18px 12px
@@ -592,7 +586,7 @@ header
     letter-spacing: 0.005em
     font-feature-settings: 'tnum' on, 'lnum' on
     min-width: 250px
-    margin: 0 auto
+    margin: 0 40px 0 0
 
 .label-file
   position: relative
@@ -603,6 +597,11 @@ header
   letter-spacing: 0.005em
   color: $accent
   font-feature-settings: 'tnum' on, 'lnum' on
+  transition: .3s ease
+  &:hover
+    color: $hover
+    .label-file__icon
+      stroke: $hover
 
 .inp-file
   display: none
@@ -616,6 +615,7 @@ header
   stroke: $accent
   stroke-width: 2px
   margin: 0 8px 0 0
+  transition: .3s ease
 
 .sidebar-title-mobile
   margin: 0 0 16px
@@ -685,7 +685,7 @@ header
   width: 100%
   text-align: center
   font-size: 14px
-
+  font-weight: 500
   .tbody
     width: 100%
 
@@ -737,9 +737,9 @@ header
   color: #23365B
   line-height: 150%
   &:hover
-    color: $orange
+    color: $hover
     .links-document__icon
-      stroke: $orange
+      stroke: $hover
 
 .links-document__icon
   width: 24px
@@ -960,7 +960,7 @@ header
   line-height: 150%
   width: 100%
   letter-spacing: 0.005em
-
+  font-weight: 500
   td
     padding: 13px 16px
     text-align: center
@@ -968,8 +968,8 @@ header
 
 thead
   width: 100%
-  color: #F6B52E
-  //border-bottom: 1px solid #F0F0F0
+  color: $hover
+  font-size: 16px
   .td
     padding: 10px 16px
 
@@ -1043,7 +1043,7 @@ tr
   width: 100%
   display: inline-block
   margin: 0 auto 8px
-  color: #F6B52E
+  color: $hover
 
 .select2-container
   width: 100%
@@ -1351,10 +1351,10 @@ tr
     margin: 0 0 24px
   .input-text
     margin: 0
-    width: calc(100% - 360px)
+    width: 50%
     text-align: left
   input, .select-wrap
-    max-width: 360px
+    max-width: 50%
     width: 100%
     &::placeholder
       color: #A9A9A9
@@ -1363,6 +1363,10 @@ tr
     text-align: center
     font-size: 14px
 
+.form-output-pass
+  .input-text
+    text-align: center
+    
 .description-form
   display: block
   color: #23365B
@@ -1399,7 +1403,7 @@ tr
   padding: 4px 30px
   width: fit-content
   p
-    color: #F6B52E
+    color: $hover
     margin: 0 auto 5px
 
 .remainder-box

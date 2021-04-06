@@ -118,8 +118,8 @@ button {
   padding: 24px 0; }
 
 .container {
-  padding: 0 15px;
-  max-width: 1710px;
+  padding: 0 20px;
+  max-width: 1720px;
   width: 100%;
   margin: 0 auto;
   position: relative;
@@ -142,7 +142,7 @@ button {
 
 .logo {
   width: 100%;
-  max-width: 116px;
+  max-width: 75px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -306,7 +306,7 @@ button {
       margin: 20px 0 0; }
 
 .color-yellow {
-  color: #F6B52E; }
+  color: #E0BF54; }
 
 .color-green {
   color: #1EB23E; }
@@ -320,7 +320,7 @@ button {
 header {
   color: #fff;
   background: #022A6A;
-  padding: 15px 0; }
+  padding: 19px 0; }
   header .container {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -399,7 +399,7 @@ header {
       -webkit-transition: .3s ease;
       transition: .3s ease; }
       .sidebar-box-info__body .box-text p:hover {
-        color: #F6B52E; }
+        color: #E0BF54; }
       .sidebar-box-info__body .box-text p:last-child {
         margin: 0; }
 
@@ -448,7 +448,7 @@ header {
   -webkit-transition: .3s ease;
   transition: .3s ease; }
   .list-course li:hover {
-    color: #F6B52E; }
+    color: #E0BF54; }
   .list-course li:last-child {
     margin: 0; }
   .list-course li p {
@@ -588,7 +588,8 @@ header {
       padding: 4px 12px;
       letter-spacing: 0.005em;
       text-transform: uppercase;
-      font-size: 16px; }
+      font-size: 16px;
+      font-weight: 500; }
   .content-box__body {
     width: 100%;
     padding: 20px 25px; }
@@ -605,6 +606,8 @@ header {
               font-feature-settings: 'tnum' on, 'lnum' on;
       line-height: 150%;
       font-size: 14px; }
+      .content-box__body .box-text strong {
+        font-weight: bold; }
 
 .content-box-result {
   border: none; }
@@ -618,14 +621,6 @@ header {
     font-size: 12px;
     line-height: 150%;
     letter-spacing: 0.005em; }
-  .form-verification .form-item__head {
-    position: relative; }
-    .form-verification .form-item__head .label-file {
-      position: absolute;
-      right: 0;
-      top: 50%;
-      -webkit-transform: translate(0, -50%);
-              transform: translate(0, -50%); }
 
 .form-item {
   padding: 10px 18px 12px;
@@ -656,7 +651,7 @@ header {
     -webkit-font-feature-settings: 'tnum' on, 'lnum' on;
             font-feature-settings: 'tnum' on, 'lnum' on;
     min-width: 250px;
-    margin: 0 auto; }
+    margin: 0 40px 0 0; }
 
 .label-file {
   position: relative;
@@ -673,7 +668,13 @@ header {
   letter-spacing: 0.005em;
   color: #163D8E;
   -webkit-font-feature-settings: 'tnum' on, 'lnum' on;
-          font-feature-settings: 'tnum' on, 'lnum' on; }
+          font-feature-settings: 'tnum' on, 'lnum' on;
+  -webkit-transition: .3s ease;
+  transition: .3s ease; }
+  .label-file:hover {
+    color: #E0BF54; }
+    .label-file:hover .label-file__icon {
+      stroke: #E0BF54; }
 
 .inp-file {
   display: none; }
@@ -692,7 +693,9 @@ header {
   height: 24px;
   stroke: #163D8E;
   stroke-width: 2px;
-  margin: 0 8px 0 0; }
+  margin: 0 8px 0 0;
+  -webkit-transition: .3s ease;
+  transition: .3s ease; }
 
 .sidebar-title-mobile {
   margin: 0 0 16px;
@@ -771,7 +774,8 @@ header {
 .table-data {
   width: 100%;
   text-align: center;
-  font-size: 14px; }
+  font-size: 14px;
+  font-weight: 500; }
   .table-data .tbody {
     width: 100%; }
   .table-data .tr {
@@ -833,9 +837,9 @@ header {
   color: #23365B;
   line-height: 150%; }
   .links-document:hover {
-    color: #F6B52E; }
+    color: #E0BF54; }
     .links-document:hover .links-document__icon {
-      stroke: #F6B52E; }
+      stroke: #E0BF54; }
 
 .links-document__icon {
   width: 24px;
@@ -1103,7 +1107,8 @@ header {
 .table {
   line-height: 150%;
   width: 100%;
-  letter-spacing: 0.005em; }
+  letter-spacing: 0.005em;
+  font-weight: 500; }
   .table td {
     padding: 13px 16px;
     text-align: center;
@@ -1111,7 +1116,8 @@ header {
 
 thead {
   width: 100%;
-  color: #F6B52E; }
+  color: #E0BF54;
+  font-size: 16px; }
   thead .td {
     padding: 10px 16px; }
 
@@ -1201,7 +1207,7 @@ tr {
   width: 100%;
   display: inline-block;
   margin: 0 auto 8px;
-  color: #F6B52E; }
+  color: #E0BF54; }
 
 .select2-container {
   width: 100%; }
@@ -1581,10 +1587,10 @@ tr {
     margin: 0 0 24px; }
   .form-password .input-text {
     margin: 0;
-    width: calc(100% - 360px);
+    width: 50%;
     text-align: left; }
   .form-password input, .form-password .select-wrap {
-    max-width: 360px;
+    max-width: 50%;
     width: 100%; }
     .form-password input::-webkit-input-placeholder, .form-password .select-wrap::-webkit-input-placeholder {
       color: #A9A9A9; }
@@ -1598,6 +1604,9 @@ tr {
     margin: 0 auto 11px;
     text-align: center;
     font-size: 14px; }
+
+.form-output-pass .input-text {
+  text-align: center; }
 
 .description-form {
   display: block;
@@ -1645,7 +1654,7 @@ tr {
   width: -moz-fit-content;
   width: fit-content; }
   .output-box p {
-    color: #F6B52E;
+    color: #E0BF54;
     margin: 0 auto 5px; }
 
 .remainder-box p {
@@ -1787,7 +1796,7 @@ tr {
     max-width: 264px;
     margin: 0 auto 30px; }
   .form-account button {
-    margin: 0 auto; } }
+    margin: 0 auto 30px; } }
 
 @media only screen and (max-width: 1410px) {
   .content-my-score .sidebar-right {
@@ -1842,7 +1851,9 @@ tr {
   .table-data {
     font-size: 12px; }
   .content-box-wbs .name-score {
-    max-width: 270px; } }
+    max-width: 270px; }
+  thead {
+    font-size: 14px; } }
 
 @media only screen and (max-width: 1330px) {
   .table-data {
@@ -1937,12 +1948,6 @@ tr {
       display: none; }
   .content-box-wbs .content-my-info__head {
     margin: 0; }
-  .form-verification .form-item__head .label-file {
-    position: relative;
-    right: 0;
-    top: 0;
-    -webkit-transform: none;
-            transform: none; }
   .btn-group {
     -ms-flex-pack: distribute;
         justify-content: space-around; }
@@ -1957,7 +1962,7 @@ tr {
     padding: 0 0 0 15px; }
   .greeting {
     display: block; }
-  header .container {
+  header .container, .container {
     padding: 0 15px; }
   .content-wrapper {
     width: 100%;
