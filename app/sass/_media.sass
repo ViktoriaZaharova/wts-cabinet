@@ -197,6 +197,10 @@
     .btn
       margin-right: 0
 
+  .transfer-form .form-group-bottom
+    .btn
+      margin: 0 auto
+
 
 @media only screen and (max-width: 1200px)
   .sidebar-left
@@ -278,7 +282,27 @@
       top: 0
       position: relative
 
+  .transfer-form .logo-my:last-child, .content-box-wbs .logo-my:last-child
+    display: flex
+
+  .transfer-form .content-my-info__head
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+
+  .transfer-form-rla .name-score
+    width: auto
+    order: 0
+
+  .content-box-wbs .name-score
+    max-width: 250px
+
+  .content-box-wbs .logo-my
+    margin: 0 0 17px
+
 @media only screen and (max-width: 1100px)
+
+
   .table
     td
       padding: 0
@@ -298,8 +322,11 @@
   tr
     background: #fff
     margin: 0 0 8px
-    display: block
-    column-count: 2
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: flex-start
+    //column-count: 2
     padding: 15px
     box-shadow: 0 1px 8px rgba(203, 203, 203, 0.24)
     border: 1px solid #163D8E
@@ -313,6 +340,7 @@
     display: flex
     align-items: center
     margin: 0 0 16px
+    width: 50%
     p
       display: inline-block
       width: 50%
@@ -322,7 +350,7 @@
       content: attr(data-table)
       display: inline-block
       width: 50%
-      color: #F6B52E
+      color: $hover
       text-align: right
       padding: 0 15px 0 0
 
@@ -375,13 +403,14 @@
 
 
 @media only screen and (max-width: 900px)
-  .content-my-info__head
+  .content-my-info__head, .transfer-form .content-my-info__head
     flex-direction: column
     align-items: center
 
-  .logo-my
+  .logo-my, .transfer-form .logo-my, .content-box-wbs .logo-my
     &:last-child
       display: none
+
 
   .status-score
     flex-direction: column
@@ -412,6 +441,18 @@
 
   .content-box-contract .output-box-max, .content-box-contract .output-box
     width: 100%
+
+  .transfer-form-rla .logo-my:last-child
+    display: flex
+
+  .transfer-form-rla
+    .name-score
+      order: 1
+      width: 100%
+    .content-my-info__head
+      flex-direction: row
+      align-items: center
+      justify-content: space-around
 
 @media only screen and (max-width: 768px)
   .greeting
@@ -491,6 +532,14 @@
 @media only screen and (max-width: 650px)
   .greeting
     display: none
+
+  .table td
+    width: 100%
+
+  .form-account label
+    max-width: 100%
+    input
+      max-width: none
 
 @media only screen and (max-width: 576px)
   .form-item__head
@@ -642,3 +691,6 @@
 
   .chart
     height: 350px
+
+  .text-x
+    display: none
